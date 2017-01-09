@@ -5,6 +5,7 @@ from wordvalue import load_words, calc_word_value, max_word_value
 
 TEST_WORDS = ('bob', 'julian', 'pybites', 'quit', 'barbeque')
 
+
 class TestWordValue(unittest.TestCase):
     
     def test_load_words(self):
