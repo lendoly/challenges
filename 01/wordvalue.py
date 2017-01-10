@@ -3,8 +3,8 @@ from data import DICTIONARY, LETTER_SCORES
 
 def load_words():
     """Load dictionary into a list and return list"""
-    f = open(DICTIONARY, 'r')
-    return [line.rstrip() for line in f]
+    with open(DICTIONARY, 'r') as f:
+        return [line.rstrip() for line in f]
 
 
 def calc_word_value(word):
@@ -16,13 +16,10 @@ def calc_word_value(word):
     return score
 
 
-def max_word_value(words=()):
+def max_word_value(words=load_words()):
     """Calculate the word with the max value, can receive a list
     of words as arg, if none provided uses default DICTIONARY"""
-    if not words:
-        words = load_words()
-    max_value = 0
-    max_word = None
+    max_value, max_word = 0, None
     for word in words:
         value = calc_word_value(word)
         if max_value < value:
