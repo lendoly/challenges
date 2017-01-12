@@ -1,3 +1,4 @@
+[![Lintly](https://lintly.com/gh/lendoly/challenges/badge.svg)](https://lintly.com/gh/lendoly/challenges/)
 # PyBites Code Challenges
 
 Every Monday we release a code challenge [on our blog](http://pybit.es). 
