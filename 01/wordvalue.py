@@ -28,5 +28,9 @@ def max_word_value(words=load_words()):
     return max_word
 
 
+def test_function():
+    pass
+
+
 if __name__ == "__main__":
     pass
